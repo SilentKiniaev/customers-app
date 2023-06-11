@@ -1,0 +1,27 @@
+{
+  "name": "customers-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-app": "node dist/app.js",
+    "start-sync": "node dist/sync.js",
+    "start-sync:full": "node dist/sync.js --full-reindex",
+    "build": "tsc",
+    "format": "prettier --write **/*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "dotenv": "^16.1.1",
+    "mongodb": "^5.5.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.4",
+    "@types/node": "^20.2.5",
+    "prettier": "2.8.8",
+    "typescript": "^5.1.3"
+  }
+}
